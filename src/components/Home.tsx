@@ -50,7 +50,7 @@ const Home = () => {
   };
 
   return (
-    <main className="w-full h-screen flex flex-col justify-center items-center bg-[#2D2D2D]">
+    <main className="w-full h-screen flex flex-col justify-center items-center bg-[#4A4947]">
       <section className="bg-[#183e4b] p-8 rounded-lg flex flex-col gap-4 border border-white">
         <h3 className="text-6xl  font-black text-[#fff]">CACHO</h3>
         <div className="flex flex-col gap-2">

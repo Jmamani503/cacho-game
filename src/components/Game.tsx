@@ -57,13 +57,13 @@ const Game = () => {
       resetCurrentRoll()
       setCurrentPlayer(0)
       setCurrentStage(TurnStage.ROLL_DICE)
-      setCurrentRound(10)
+      setCurrentRound(0)
       setWinners([])
       setHasFinished(false)
     }
   
   return (
-    <main className="w-full h-screen flex flex-col bg-[#4A4947] p-2 md:p-8 justify-center items-center">
+    <main className="w-full min-h-screen flex flex-col bg-[#4A4947] p-2 md:p-8 justify-center items-center">
       {/* <h3 className="text-center text-6xl text-[#fff] font-black mb-20">CACHO</h3> */}
       <div className="flex flex-col w-full max-w-screen-lg md:flex-row gap-3">
         <PlayersScore />

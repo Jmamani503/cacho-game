@@ -30,7 +30,7 @@ export const GameOptions = ({goToMenu, resetGame}: Props) => {
 
     return (
         <aside className="flex flex-col w-full md:w-52 justify-center items-center">
-            <div className="bg-[#1b4552] flex flex-row gap-2 rounded-lg border border-white p-2 md:p-4 max-w-max md:w-full md:flex-col justify-center items-center">
+            <div className="bg-[#1b4552] flex flex-row gap-2 rounded-lg border border-white p-2 md:p-4 max-w-max md:w-full  justify-center items-center">
                 <button
                     onClick={() => openConfirmModal(ConfirmationType.RESET)}
                     className="bg-[#183e4b]  px-3 py-2 rounded-md font-bold border border-white w-full text-sm md:text-base">Restart</button>

@@ -83,7 +83,7 @@ export const useGameStore = create<State>((set) => ({
     resetCurrentRoll: () => set({currentRoll: initialDice}),
     currentStage: TurnStage.ROLL_DICE,
     setCurrentStage: (nextStage) => set({currentStage: nextStage}) ,
-    currentRound: 10,
+    currentRound: 0,
     setCurrentRound: (newCurrentRound) => set({currentRound: newCurrentRound}) ,
     hasReroll: false,
     setHasReroll: (hasReroll) => set({hasReroll}),

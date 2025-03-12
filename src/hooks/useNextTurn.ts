@@ -5,11 +5,12 @@ export const useNextTurn = () => {
 
     const { players, currentPlayer, setCurrentPlayer, currentRound, setCurrentRound, resetCurrentRoll, setHasReroll, setHasFinished} = useGameStore((state) => state)
     
-
+  console.log(currentRound)
     const nextTurn = useCallback(() => {
+
         if (currentPlayer < players.length - 1) {
             setCurrentPlayer(currentPlayer + 1)
-        } else if(currentRound < 11){
+        } else if(currentRound < 10){
             setCurrentPlayer(0)
               setCurrentRound(currentRound + 1)
             } else {

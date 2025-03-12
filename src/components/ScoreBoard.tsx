@@ -31,8 +31,8 @@ const ScoreBoard = ({ player, isCurrentBoard }: Props) => {
   }
 
   return (
-    <article className={`bg-[#1b4552] rounded-lg border border-white ${isCurrentBoard ? 'w-80 p-2 md:p-4' : 'w-full p-2'}`}>
-      <h3 className={`text-center  font-semibold md:font-black uppercase ${isCurrentBoard ? 'text-xl md:text-3xl pb-2 md:pb-4' : 'text-xs md:text-lg'}`}>{player.name} - {player.totalScore}</h3>
+    <article className={`bg-[#1b4552] rounded-lg border border-white ${isCurrentBoard ? 'w-80 p-2 md:p-4' : 'w-full max-w-32 p-2'}`}>
+      <h3 className={`text-center  font-semibold md:font-black uppercase ${isCurrentBoard ? 'text-xl md:text-3xl pb-2 md:pb-4' : 'text-xs md:text-lg pb-1'}`}>{player.name} - {player.totalScore}</h3>
       <div className="grid grid-cols-3 justify-center gap-0.5 bg-white">
       {player.score.map((play, index) => (
         <ScoreBoardCell

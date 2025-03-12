@@ -34,7 +34,7 @@ const Modal = () => {
             onClick={canClose ? closeModal : () => { }}
         >
             <div
-                className="relative bg-[#183e4b] shadow-lg shadow-black p-8 rounded-lg border border-white"
+                className="relative bg-[#183e4b] shadow-lg shadow-black p-8 rounded-lg border border-white m-2"
                 ref={modalRef}
                 onClick={handleClickPropagation}
             >
